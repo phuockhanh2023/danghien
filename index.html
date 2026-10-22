@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#1e3a5f"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><title>Quản Lý Thu Chi Hội Thánh Bê Tên-Mỹ Hạnh</title>
+<style>
+:root{--bg:#e9eff6;--card:#fff;--tx:#1b2733;--mu:#5d6b7a;--bd:#d3dde8;--ac:#1e3a5f;--gold:#c8a23a;--gd:#8a6d12;--th:#1b7a4b;--ch:#a8322d;--zb:#f4f8fc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1621;--card:#17212e;--tx:#e6ebf1;--mu:#98a6b6;--bd:#2a394b;--ac:#4f86c6;--gold:#d9b84e;--gd:#d9b84e;--th:#5fc08b;--ch:#ee8d85;--zb:#1b2736}}
+:root[data-theme="dark"]{--bg:#0e1621;--card:#17212e;--tx:#e6ebf1;--mu:#98a6b6;--bd:#2a394b;--ac:#4f86c6;--gold:#d9b84e;--gd:#d9b84e;--th:#5fc08b;--ch:#ee8d85;--zb:#1b2736}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+.hero{background:linear-gradient(165deg,#0f2747,#1e3a5f 55%,#2c5581);color:#fff;text-align:center;padding:26px 16px 70px;border-bottom:4px solid #c8a23a}
+.hero svg{width:58px;height:58px}.hero h1{font:700 clamp(21px,5.2vw,32px)/1.25 Georgia,'Palatino Linotype',serif;margin:10px auto 0;max-width:720px;letter-spacing:.2px}
+.hero p{margin:6px 0 0;color:#c9d6e6;font-size:14px}
+main{max-width:880px;margin:0 auto;padding:0 14px 28px}
+.verse{margin:-48px 0 18px;background:var(--card);border:1px solid var(--bd);border-left:6px solid var(--gold);border-radius:6px 16px 16px 6px;padding:16px 20px;box-shadow:0 8px 24px rgba(15,39,71,.14)}
+.verse q{display:block;quotes:"“" "”";font:italic 18px/1.65 Georgia,'Palatino Linotype',serif}
+.verse cite{display:block;text-align:right;margin-top:8px;font:600 15px Georgia,serif;color:var(--gd)}
+h2{font:700 18px Georgia,'Palatino Linotype',serif;color:var(--ac);margin:0 0 12px;padding-left:10px;border-left:4px solid var(--gold)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,39,71,.07)}
+.row{display:flex;flex-wrap:wrap;gap:12px}.row>label{flex:1 1 190px;display:flex;flex-direction:column;font-size:14px;color:var(--mu);gap:4px}
+input,select,button{font:inherit;padding:10px 11px;border:1px solid var(--bd);border-radius:9px;background:var(--bg);color:var(--tx);width:100%}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:1px}
+button{background:var(--ac);color:#fff;border:0;cursor:pointer;width:auto;padding:10px 18px;font-weight:600;margin:2px 4px 2px 0}
+button:hover{filter:brightness(1.12)}
+button.s{background:none;color:var(--ch);padding:2px 8px;border:1px solid var(--bd);font-weight:400}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px;margin-top:12px}
+.st{border:1px solid var(--bd);border-top:4px solid var(--bd);border-radius:10px;padding:10px 12px;background:var(--zb)}
+.st:has(.th){border-top-color:var(--th)}.st:has(.ch){border-top-color:var(--ch)}
+.st small{color:var(--mu);display:block;line-height:1.35;margin-bottom:2px}.st b{font-size:19px}
+.th{color:var(--th)}.ch{color:var(--ch)}
+.st.big{background:linear-gradient(135deg,#10294a,#2c5581);border:0;border-top:4px solid #c8a23a;color:#fff;grid-column:1/-1;text-align:center;padding:16px}
+.st.big small{color:#d6e0ee;font-size:14px}.st.big b{font:700 30px Georgia,serif;color:#f3d97a}
+.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 8px;border-bottom:1px solid var(--bd);text-align:left}td.n,th.n{text-align:right}
+thead th{background:var(--ac);color:#fff}tbody tr:nth-child(even){background:var(--zb)}
+</style></head><body><header class="hero"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#c8a23a" stroke-width="3"/><path d="M28 14h8v13h13v8H36v17h-8V35H15v-8h13z" fill="#c8a23a"/></svg>
+<h1>Quản Lý Thu Chi Hội Thánh Bê Tên-Mỹ Hạnh</h1><p>Sổ thu chi và báo cáo hằng tháng</p></header>
+<main>
+<figure class="verse" style="margin-left:0;margin-right:0"><q>Mỗi người nên tùy theo lòng mình đã định mà quyên ra, không phải phàn nàn hay là vì ép uổng; vì Đức Chúa Trời yêu kẻ dâng của cách vui lòng.</q><cite>II Cô-rinh-tô 9:7</cite></figure>
+
+<div class="card"><h2>% Tiền Quản Nhiệm theo từng tháng</h2><div class="row"><label>Chọn tháng (1 – 12)<select id="pm"></select></label><label>% Quản Nhiệm (trên tổng thu của tháng đó)<input id="pct" type="number" min="0" max="100" step="0.5"></label></div>
+<p style="margin:12px 0 0"><button id="savepct" type="button">Lưu %</button> <span id="pmsg"></span></p></div>
+<div class="card"><h2>Nhập liệu</h2>
+<div class="row">
+<label>Năm<input id="year" type="number" min="2000" max="2100"></label>
+<label>Nhập số tiền cũ (tồn đầu kỳ)<input id="open" inputmode="numeric" placeholder="0"></label>
+
+</div><hr style="border:0;border-top:1px solid var(--bd);margin:14px 0">
+<div class="row">
+<label>Loại<select id="type"><option value="thu">Thu tiền</option><option value="chi">Chi tiền</option></select></label>
+<label id="dl">Ngày thu tiền (ngày/tháng/năm)<span style="display:flex;gap:6px"><input id="date" inputmode="numeric" placeholder="dd/mm/yyyy"><button type="button" id="cal">Lịch</button><input id="dp" type="date" tabindex="-1" style="position:absolute;opacity:0;pointer-events:none;width:1px;height:1px"></span></label>
+<label>Nhập số tiền<input id="amt" inputmode="numeric" placeholder="VD: 500000"></label>
+<label>Ghi chú<input id="note" type="text"></label>
+</div>
+<p><button id="add">Thêm dữ liệu Thu-Chi</button> <button id="cancel" type="button" hidden style="background:var(--mu)">Hủy sửa</button> <span id="msg" style="color:var(--ch)"></span></p></div>
+
+<div class="card"><h2>Hiển thị theo tháng</h2>
+<label style="font-size:14px;color:var(--mu)">Chọn tháng<select id="mon"></select></label>
+<div class="stats" id="mstats"></div></div>
+
+
+<div class="card"><h2>Số tiền còn lại của Thủ quỹ bây giờ</h2>
+<div class="stats"><div class="st big"><small id="tqf"></small><b id="tq"></b></div></div></div>
+
+<div class="card"><h2>Danh sách dữ liệu Thu-Chi</h2><label style="font-size:14px;color:var(--mu);display:block;margin-bottom:10px">Chọn tháng<select id="lm"></select></label><div class="scroll"><table><thead><tr><th>Ngày</th><th>Loại</th><th class="n">Số tiền</th><th>Ghi chú</th><th></th></tr></thead><tbody id="list"></tbody></table></div></div>
+<div class="card"><h2>Sao lưu dữ liệu</h2>
+<p style="margin:0 0 10px;color:var(--mu);font-size:14px">Lưu toàn bộ sổ thu chi ra file .txt, hoặc nhập lại dữ liệu từ file .txt đã lưu.</p>
+<button id="expb">Lưu file .txt</button> <button id="impb">Nhập từ file .txt</button> <button id="rep">Xuất báo cáo (.txt)</button> <button id="repw">Xuất báo cáo Word (bảng)</button>
+<input type="file" id="imp" accept=".txt,text/plain" hidden> <span id="bmsg" style="color:var(--ch)"></span></div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let S={open:0,pct:40,pcts:{},tx:[],v:2};
+try{const r=localStorage.getItem('thuchi_hoithanh');if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}
+if(S.v!==2){S.pct=40;S.v=2}
+if(!S.pcts)S.pcts={};
+const save=()=>{try{localStorage.setItem('thuchi_hoithanh',JSON.stringify(S))}catch(e){}};
+const fmt=n=>Math.round(n).toLocaleString('vi-VN')+' đ';
+const num=s=>Number(String(s).replace(/[^\d]/g,''))||0;
+const now=new Date();
+$('year').value=now.getFullYear();
+const iso2vn=s=>s.split('-').reverse().join('/');
+const vn2iso=s=>{const m=String(s).trim().match(/^(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{4})$/);if(!m)return'';const d=new Date(+m[3],m[2]-1,+m[1]);if(d.getMonth()!==m[2]-1)return'';return m[3]+'-'+m[2].padStart(2,'0')+'-'+m[1].padStart(2,'0')};
+$('date').value=String(now.getDate()).padStart(2,'0')+'/'+String(now.getMonth()+1).padStart(2,'0')+'/'+now.getFullYear();
+$('mon').innerHTML=Array.from({length:12},(_,i)=>`<option value="${i}">Tháng ${i+1}</option>`).join('');
+$('mon').value=now.getMonth();$('pm').innerHTML=$('mon').innerHTML;$('pm').value=now.getMonth();$('lm').innerHTML='<option value="all">Tất cả các tháng</option>'+$('mon').innerHTML;
+$('open').value=(S.open||'');
+const yr=()=>+$('year').value;
+const pf=m=>{const v=S.pcts[yr()+'-'+m];return v!==undefined?v:S.pct};
+let editIdx=-1;
+function endEdit(){editIdx=-1;$('add').textContent='Thêm dữ liệu Thu-Chi';$('cancel').hidden=true}
+function sums(m){let t=0,c=0;S.tx.forEach(x=>{const d=new Date(x.date);if(d.getFullYear()===yr()&&d.getMonth()===m){x.type==='thu'?t+=x.amt:c+=x.amt}});
+ const left=t-c,qn=t*pf(m)/100;return{t,c,left,qn,fin:left-qn}}
+const box=(l,v,k)=>`<div class="st"><small>${l}</small><b class="${k||''}">${fmt(v)}</b></div>`;
+function render(){
+ const m=+$('mon').value,a=sums(m);let ton=0;for(let i=0;i<=m;i++)ton+=sums(i).fin;if(document.activeElement!==$('pct'))$('pct').value=pf(+$('pm').value);
+ $('mstats').innerHTML=box('Tổng thu tháng',a.t,'th')+box('Tổng chi tháng',a.c,'ch')+box(`Tiền Quản Nhiệm (${pf(m)}% trên tổng thu trong tháng)`,a.qn)+box('Số tiền cuối cùng của tháng còn lại (Tổng thu − Tổng chi − Quản Nhiệm)',a.fin)+box('Tổng số tiền tồn (số tiền cuối cùng của tháng này + các tháng trước)',ton);
+ let tot=S.open;const parts=[];for(let i=0;i<12;i++){const s=sums(i);tot+=s.fin}
+ $('tq').textContent=fmt(tot);$('tqf').textContent='Số tiền cũ + Σ số tiền cuối cùng các tháng trong năm '+yr();
+ const rows=S.tx.map((x,i)=>({...x,i})).filter(x=>{const d=new Date(x.date);return d.getFullYear()===yr()&&($('lm').value==='all'||d.getMonth()===+$('lm').value)}).sort((a,b)=>b.date.localeCompare(a.date));
+ $('list').innerHTML=rows.map(x=>`<tr><td>${x.date.split('-').reverse().join('/')}</td><td class="${x.type==='thu'?'th':'ch'}">${x.type==='thu'?'Thu':'Chi'}</td><td class="n">${fmt(x.amt)}</td><td>${x.note.replace(/</g,'&lt;')}</td><td style="white-space:nowrap"><button class="s" style="color:var(--ac)" onclick="edit(${x.i})">Sửa</button> <button class="s" onclick="del(${x.i})">Xóa</button></td></tr>`).join('')||'<tr><td colspan="5" style="color:var(--mu)">Chưa có dữ liệu Thu-Chi.</td></tr>';
+}
+function del(i){if(confirm('Xóa dữ liệu Thu-Chi này?')){endEdit();S.tx.splice(i,1);save();render()}}
+function edit(i){const x=S.tx[i];if(!x)return;editIdx=i;$('type').value=x.type;$('type').onchange();$('date').value=iso2vn(x.date);$('amt').value=x.amt;$('note').value=x.note;$('add').textContent='Lưu chỉnh sửa';$('cancel').hidden=false;$('msg').textContent='';$('type').scrollIntoView({behavior:'smooth',block:'center'})}
+$('cancel').onclick=()=>{endEdit();$('amt').value='';$('note').value=''};
+$('type').onchange=()=>$('dl').firstChild.textContent=$('type').value==='thu'?'Ngày thu tiền (ngày/tháng/năm)':'Ngày chi tiền (ngày/tháng/năm)';
+$('add').onclick=()=>{const amt=num($('amt').value);
+ const di=vn2iso($('date').value);if(!amt||!di){$('msg').textContent='Nhập số tiền và ngày đúng dạng ngày/tháng/năm.';return}
+ $('msg').textContent='';const o={type:$('type').value,date:di,amt,note:$('note').value};if(editIdx>=0)S.tx[editIdx]=o;else S.tx.push(o);endEdit();
+ $('amt').value='';$('note').value='';save();render()};
+$('open').oninput=e=>{S.open=num(e.target.value);e.target.value=(S.open||'');save();render()};
+$('pct').oninput=()=>{$('pmsg').textContent=''};
+$('pct').onkeydown=e=>{if(e.key==='Enter')$('savepct').click()};
+$('pm').addEventListener('change',()=>{$('pmsg').textContent=''});
+$('savepct').onclick=()=>{const v=$('pct').value.trim(),n=Number(v),pm=$('pm');
+ if(v===''||isNaN(n)||n<0||n>100){$('pmsg').style.color='var(--ch)';$('pmsg').textContent='Nhập % từ 0 đến 100.';return}
+ S.pcts[yr()+'-'+pm.value]=n;save();render();
+ $('pmsg').style.color='var(--th)';$('pmsg').textContent='Đã lưu: '+pm.options[pm.selectedIndex].text+' năm '+yr()+' = '+n+'%'};
+$('expb').onclick=()=>{try{const b=new Blob([JSON.stringify({app:'thuchi-hoithanh',open:S.open,pct:S.pct,pcts:S.pcts,tx:S.tx},null,1)],{type:'text/plain'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='thu-chi-hoi-thanh-'+new Date().toISOString().slice(0,10)+'.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);$('bmsg').textContent=''}catch(e){$('bmsg').textContent='Không lưu được file trên trang này.'}};
+$('rep').onclick=()=>{try{
+const Y=yr(),L=[],p=(s,n)=>String(s).padEnd(n),r=(s,n)=>String(s).padStart(n),f=n=>Math.round(n).toLocaleString('vi-VN');
+const ln='='.repeat(88),ds='-'.repeat(88),d0=new Date();
+L.push(ln,'BÁO CÁO THU CHI HỘI THÁNH BÊ TÊN-MỸ HẠNH - NĂM '+Y,'Ngày xuất: '+String(d0.getDate()).padStart(2,'0')+'/'+String(d0.getMonth()+1).padStart(2,'0')+'/'+d0.getFullYear(),ln,'',
+'Số tiền cũ (tồn đầu kỳ): '+f(S.open)+' đ','Tiền Quản Nhiệm: tính theo % trên tổng thu của từng tháng (xem cột Quản Nhiệm)','',
+'I. TỔNG HỢP THEO THÁNG (đơn vị: đồng)',ds,p('Tháng',8)+r('Tổng thu',14)+r('Tổng chi',14)+r('Còn lại',14)+r('Quản Nhiệm (%)',22)+r('Cuối cùng',15),ds);
+let T=0,C=0,Q=0,F=0;const ms=[];
+for(let i=0;i<12;i++){const s=sums(i);ms.push(s);T+=s.t;C+=s.c;Q+=s.qn;F+=s.fin;L.push(p('Tháng '+(i+1),8)+r(f(s.t),14)+r(f(s.c),14)+r(f(s.left),14)+r(f(s.qn)+' ('+pf(i)+'%)',22)+r(f(s.fin),15))}
+L.push(ds,p('Cả năm',8)+r(f(T),14)+r(f(C),14)+r(f(T-C),14)+r(f(Q),22)+r(f(F),15));
+L.push('','II. SỐ TIỀN CÒN LẠI CỦA THỦ QUỸ HIỆN TẠI',ds,'Số tiền cũ + tổng số tiền cuối cùng các tháng = '+f(S.open)+' + '+f(F)+' = '+f(S.open+F)+' đ','',
+'III. CHI TIẾT GIAO DỊCH NĂM '+Y,ds,p('Ngày',12)+p('Loại',6)+r('Số tiền',16)+'  Ghi chú',ds);
+const rows=S.tx.filter(x=>new Date(x.date).getFullYear()===Y).sort((a,b)=>a.date.localeCompare(b.date));
+rows.forEach(x=>L.push(p(iso2vn(x.date),12)+p(x.type==='thu'?'Thu':'Chi',6)+r(f(x.amt),16)+'  '+x.note));
+if(!rows.length)L.push('(Chưa có dữ liệu Thu-Chi)');
+L.push(ds,'--- Hết báo cáo ---');
+const b=new Blob(['\uFEFF'+L.join('\r\n')],{type:'text/plain;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='bao-cao-thu-chi-'+Y+'.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);$('bmsg').textContent=''}catch(e){$('bmsg').textContent='Không xuất được báo cáo trên trang này.'}};
+$('repw').onclick=()=>{try{
+const Y=yr(),f=n=>Math.round(n).toLocaleString('vi-VN'),e=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'),d0=new Date(),pad=n=>String(n).padStart(2,'0');
+const cell=(x,c)=>`<td${c?` class="${c}"`:''}>${e(x)}</td>`;
+const th=a=>'<tr>'+a.map(x=>`<th>${e(x)}</th>`).join('')+'</tr>';
+let T=0,C=0,Q=0,F=0,ton=0;const ms=[],tons=[];
+for(let i=0;i<12;i++){const s=sums(i);ms.push(s);T+=s.t;C+=s.c;Q+=s.qn;F+=s.fin;ton+=s.fin;tons.push(ton)}
+const yr12=ms.map((s,i)=>`<tr>${cell('Tháng '+(i+1))}${cell(f(s.t),'n')}${cell(f(s.c),'n')}${cell(pf(i)+'%','n')}${cell(f(s.qn),'n')}${cell(f(s.fin),'n')}${cell(f(tons[i]),'n')}</tr>`).join('')+`<tr class="tot">${cell('Cả năm')}${cell(f(T),'n')}${cell(f(C),'n')}${cell('','n')}${cell(f(Q),'n')}${cell(f(F),'n')}${cell('','n')}</tr>`;
+const all=S.tx.filter(x=>+x.date.slice(0,4)===Y).sort((a,b)=>a.date.localeCompare(b.date));
+let mh='';
+for(let i=0;i<12;i++){const s=ms[i],rows=all.filter(x=>+x.date.slice(5,7)-1===i);
+ const body=rows.length?rows.map((x,k)=>`<tr>${cell(k+1,'c')}${cell(iso2vn(x.date))}${cell(x.note)}${cell(x.type==='thu'?f(x.amt):'','n')}${cell(x.type==='chi'?f(x.amt):'','n')}</tr>`).join('')+`<tr class="tot"><td colspan="3">Cộng</td>${cell(f(s.t),'n')}${cell(f(s.c),'n')}</tr>`:'<tr><td colspan="5" class="c">(Chưa có dữ liệu Thu-Chi trong tháng này)</td></tr>';
+ mh+=`<h3>Tháng ${i+1} năm ${Y}</h3><table>${th(['STT','Ngày','Nội dung / Ghi chú','Thu (đồng)','Chi (đồng)'])}${body}</table>
+<table class="sm"><tr><td>Tổng thu tháng ${i+1}</td>${cell(f(s.t)+' đ','n')}</tr><tr><td>Tổng chi tháng ${i+1}</td>${cell(f(s.c)+' đ','n')}</tr><tr><td>Tiền Quản Nhiệm (${pf(i)}% trên tổng thu)</td>${cell(f(s.qn)+' đ','n')}</tr><tr class="tot"><td>Số tiền cuối cùng của tháng còn lại (Tổng thu − Tổng chi − Quản Nhiệm)</td>${cell(f(s.fin)+' đ','n')}</tr><tr class="tot"><td>Tổng số tiền tồn (tháng này + các tháng trước)</td>${cell(f(tons[i])+' đ','n')}</tr></table>`}
+const html=`<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>Báo cáo thu chi Hội Thánh Bê Tên-Mỹ Hạnh ${Y}</title>
+<style>@page{size:A4;margin:2cm}body{font-family:'Times New Roman',serif;font-size:12pt}h1{text-align:center;font-size:17pt;margin:0}h2{font-size:13pt;margin:18pt 0 6pt}h3{font-size:12pt;margin:14pt 0 4pt;page-break-after:avoid}p.c{text-align:center;margin:2pt 0}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #000;padding:4px 6px;font-size:11pt}th{background:#d9e2f3}td.n{text-align:right}td.c{text-align:center}tr{page-break-inside:avoid}tr.tot td{font-weight:bold;background:#f2f2f2}table.sm{margin-top:6px}table.sg td{border:0;text-align:center;width:50%;font-size:12pt}</style></head><body>
+<h1>BÁO CÁO THU CHI</h1><p class="c"><b>HỘI THÁNH BÊ TÊN-MỸ HẠNH</b></p><p class="c"><b>Năm ${Y}</b></p><p class="c" style="font-style:italic;font-size:10pt">“Mỗi người nên tùy theo lòng mình đã định mà quyên ra, không phải phàn nàn hay là vì ép uổng; vì Đức Chúa Trời yêu kẻ dâng của cách vui lòng.” (II Cô-rinh-tô 9:7)</p><p class="c">Ngày xuất: ${pad(d0.getDate())}/${pad(d0.getMonth()+1)}/${d0.getFullYear()}</p>
+<p>Số tiền cũ (tồn đầu kỳ): <b>${f(S.open)} đ</b><br>Tiền Quản Nhiệm: tính theo tỷ lệ % trên tổng thu của từng tháng</p>
+<h2>I. Bảng tổng hợp các tháng năm ${Y} (đơn vị: đồng)</h2><table>${th(['Tháng','Tổng thu','Tổng chi','Tỷ lệ QN','Tiền Quản Nhiệm','Số tiền cuối cùng','Tổng số tiền tồn'])}${yr12}</table>
+<h2>II. Chi tiết dữ liệu Thu-Chi từng tháng</h2>${mh}
+<h2>III. Số tiền còn lại của Thủ quỹ hiện tại</h2><table>${th(['Số tiền cũ','Tổng số tiền cuối cùng các tháng','Thủ quỹ còn lại'])}<tr class="tot">${cell(f(S.open)+' đ','n')}${cell(f(F)+' đ','n')}${cell(f(S.open+F)+' đ','n')}</tr></table>
+<p style="text-align:right;margin-top:16pt"><i>Ngày ..... tháng ..... năm ${Y}</i></p>
+<table class="sg"><tr><td><b>Người lập báo cáo</b><br><i>(Thủ quỹ ký tên)</i><br><br><br><br></td><td><b>Quản nhiệm</b><br><i>(Ký tên)</i><br><br><br><br></td></tr></table></body></html>`;
+const b=new Blob(['\uFEFF'+html],{type:'application/msword;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='bao-cao-thu-chi-'+Y+'.doc';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);$('bmsg').textContent=''}catch(err){$('bmsg').textContent='Không xuất được file Word trên trang này.'}};
+$('impb').onclick=()=>$('imp').click();
+$('imp').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.tx))throw 0;
+const tx=d.tx.filter(x=>(x.type==='thu'||x.type==='chi')&&/^\d{4}-\d{2}-\d{2}$/.test(x.date)&&Number(x.amt)>0).map(x=>({type:x.type,date:x.date,amt:Number(x.amt),note:String(x.note||'')}));
+if(!confirm('Thay toàn bộ dữ liệu hiện tại bằng '+tx.length+' dữ liệu Thu-Chi trong file?'))return;
+S.tx=tx;S.open=Number(d.open)||0;S.pct=Math.max(0,Math.min(100,Number(d.pct)||40));S.pcts=(d.pcts&&typeof d.pcts==='object')?d.pcts:{};$('open').value=(S.open||'');save();render();$('bmsg').textContent='Đã nhập '+tx.length+' dữ liệu Thu-Chi.'}catch(err){$('bmsg').textContent='File không đúng định dạng.'}e.target.value=''};r.readAsText(f)};
+$('cal').onclick=()=>{const dp=$('dp');dp.value=vn2iso($('date').value)||'';try{dp.showPicker()}catch(e){dp.focus()}};
+$('dp').onchange=e=>{if(e.target.value)$('date').value=iso2vn(e.target.value)};
+['year','mon','lm','pm'].forEach(id=>$(id).onchange=render);
+render();
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script></body></html>

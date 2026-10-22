@@ -1,0 +1,218 @@
+{
+ "app": "thuchi-hoithanh",
+ "open": 0,
+ "pct": 40,
+ "pcts": {
+  "2026-9": 38,
+  "2026-5": 0,
+  "2026-6": 0,
+  "2026-7": 0,
+  "2026-4": 0
+ },
+ "tx": [
+  {
+   "type": "chi",
+   "date": "2026-09-06",
+   "amt": 200000,
+   "note": "Ht phụ cô Nhe thông công"
+  },
+  {
+   "type": "thu",
+   "date": "2026-09-13",
+   "amt": 660000,
+   "note": "dâng"
+  },
+  {
+   "type": "chi",
+   "date": "2026-09-13",
+   "amt": 500000,
+   "note": "diễn giả"
+  },
+  {
+   "type": "chi",
+   "date": "2026-09-13",
+   "amt": 250000,
+   "note": "thong cong"
+  },
+  {
+   "type": "thu",
+   "date": "2026-09-20",
+   "amt": 700000,
+   "note": "dang cn"
+  },
+  {
+   "type": "chi",
+   "date": "2026-09-20",
+   "amt": 800000,
+   "note": ""
+  },
+  {
+   "type": "thu",
+   "date": "2026-09-27",
+   "amt": 470000,
+   "note": "dang cn"
+  },
+  {
+   "type": "thu",
+   "date": "2026-09-06",
+   "amt": 250000,
+   "note": "dang cn"
+  },
+  {
+   "type": "thu",
+   "date": "2026-06-21",
+   "amt": 410000,
+   "note": "CNhat"
+  },
+  {
+   "type": "thu",
+   "date": "2026-06-21",
+   "amt": 1000000,
+   "note": "Thầy Quốc dâng"
+  },
+  {
+   "type": "thu",
+   "date": "2026-06-25",
+   "amt": 300000,
+   "note": "cô Thiết dâng TC"
+  },
+  {
+   "type": "thu",
+   "date": "2026-06-28",
+   "amt": 770000,
+   "note": "Chu Nhat"
+  },
+  {
+   "type": "chi",
+   "date": "2026-06-28",
+   "amt": 500000,
+   "note": "Diễn giả"
+  },
+  {
+   "type": "chi",
+   "date": "2026-06-28",
+   "amt": 300000,
+   "note": "Thong cong"
+  },
+  {
+   "type": "thu",
+   "date": "2026-07-05",
+   "amt": 300000,
+   "note": "Chủ Nhật"
+  },
+  {
+   "type": "thu",
+   "date": "2026-07-12",
+   "amt": 510000,
+   "note": "Chủ Nhật"
+  },
+  {
+   "type": "thu",
+   "date": "2026-07-19",
+   "amt": 560000,
+   "note": "Chủ Nhật"
+  },
+  {
+   "type": "chi",
+   "date": "2026-07-19",
+   "amt": 300000,
+   "note": "Thong cong"
+  },
+  {
+   "type": "chi",
+   "date": "2026-07-19",
+   "amt": 750000,
+   "note": "Thay nhớt xe ô tô"
+  },
+  {
+   "type": "thu",
+   "date": "2026-07-26",
+   "amt": 500000,
+   "note": ""
+  },
+  {
+   "type": "thu",
+   "date": "2026-08-02",
+   "amt": 700000,
+   "note": "Chủ Nhật"
+  },
+  {
+   "type": "chi",
+   "date": "2026-08-02",
+   "amt": 500000,
+   "note": "Diễn Giả Ms Dũng"
+  },
+  {
+   "type": "thu",
+   "date": "2026-08-09",
+   "amt": 640000,
+   "note": "Chủ Nhật"
+  },
+  {
+   "type": "chi",
+   "date": "2026-08-09",
+   "amt": 1000000,
+   "note": "Điện Nước HT"
+  },
+  {
+   "type": "thu",
+   "date": "2026-08-16",
+   "amt": 550000,
+   "note": "Chủ Nhật"
+  },
+  {
+   "type": "chi",
+   "date": "2026-08-16",
+   "amt": 700000,
+   "note": "Thay nhớt oto"
+  },
+  {
+   "type": "thu",
+   "date": "2026-08-23",
+   "amt": 540000,
+   "note": "Chủ nhật"
+  },
+  {
+   "type": "thu",
+   "date": "2026-08-30",
+   "amt": 350000,
+   "note": "dâng chủ nhật"
+  },
+  {
+   "type": "chi",
+   "date": "2026-08-30",
+   "amt": 200000,
+   "note": "Diễn giã :Cô Hằng"
+  },
+  {
+   "type": "thu",
+   "date": "2026-10-04",
+   "amt": 650000,
+   "note": "chủ nhật"
+  },
+  {
+   "type": "chi",
+   "date": "2026-10-04",
+   "amt": 500000,
+   "note": "Diễn giả MS Dũng"
+  },
+  {
+   "type": "thu",
+   "date": "2026-10-11",
+   "amt": 1300000,
+   "note": "Chủ Nhật"
+  },
+  {
+   "type": "chi",
+   "date": "2026-10-11",
+   "amt": 600000,
+   "note": "Thông công"
+  },
+  {
+   "type": "chi",
+   "date": "2026-10-11",
+   "amt": 300000,
+   "note": "Xăng đi Bình Quới"
+  }
+ ]
+}
